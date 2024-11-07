@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logonike.webp" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="models">Air Max tn</a></li>
+                <li><a href="#" id="model3">Air max skepta</a></li>
+                <li><a href="#" id="modelX">Nike dunk</a></li>
+                <li><a href="#" id="modelY">Air max Dn</a></li>
+            </ul>
+            <a href="#" class="btn">Compre aqui</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">Preços Reduzidos</h2>
+                <p></p>
+            </div>
+            <div>
+                <h2 id="mph">A partir de R$1000 reais.</h2>
+                <p></p>
+            </div>
+            <div>
+                <h2 id="mi">Just Do it</h2>
+                <p></p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelX')
+    let my = document.getElementById('modelY')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+
+    ms.onclick = function(){
+        header.style.backgroundImage = "url(./tn.png)"
+        model.innerHTML = "Sneakers"
+        seg.innerHTML = "Preços Reduzidos"
+        mph.innerHTML = " A partir de R$1000 reais"
+        mi.innerHTML = "Air Max Tn Plus"
+    }
+    m3.onclick = function(){
+        header.style.backgroundImage = "url(./skepta.jpg)"
+        model.innerHTML = "Diversas cores"
+        seg.innerHTML = "Air skepta"
+        mph.innerHTML = "A partir de R$1200 reais"
+        mi.innerHTML = "Sneaker"
+    }
+    mx.onclick = function(){
+        header.style.backgroundImage = "url(./nikedunk.webp)"
+        model.innerHTML = "Sneaker"
+        seg.innerHTML = "Nike Dunk High Panda"
+        mph.innerHTML = "A partir de R$850 (Sale)"
+        mi.innerHTML = ""
+    }
+    my.onclick = function(){
+        header.style.backgroundImage = "url(./airmaxdn.webp)"
+        model.innerHTML = "Sneaker"
+        seg.innerHTML = "Air max Dn"
+        mph.innerHTML = "A partir de R$1000 reais (Sale)"
+        mi.innerHTML = ""
+    }
+</script>
+</html>
